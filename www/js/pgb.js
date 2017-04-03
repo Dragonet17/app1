@@ -85,3 +85,4 @@ function onError() {
 function showSplash() {
     navigator.splashscreen.show();
 }
+
