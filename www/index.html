@@ -41,8 +41,32 @@
 				</table>
 			</article>
 		</div>
-	<input type="button" onclick="deviceInfo()" value="Let me introduce myself!">
-		<input type="button" onclick="personaldata()" value="Personal data">
+
+		<div>
+		<article>
+				<input type="button" onclick="deviceInfo()" value="Let me introduce myself!">
+				<input type="button" onclick="personaldata()" value="Personal data">
+
+		</article>
+		</div>
+<h3>
+        III. Połączenie z internetem
+    </h3>
+    <button class="btn btn-lg btn-primary" type="button" onclick="checkConnection();" value="Network Informations">Sprawdź</button>
+    <hr />
+    <h3>
+        IV. Akcelerometr
+    </h3>
+    <button class="btn btn-lg btn-primary" type="button" onclick="startAcc()">Start</button>
+    <button class="btn btn-lg btn-primary" type="button" onclick="stopAcc()">Stop</button>
+    <p id="accText"></p>
+    <hr />
+    <h3>
+        V. Splashscreen
+    </h3>
+    <button class="btn btn-lg btn-primary" type="button" onclick="showSplash()">Pokaż</button>
+
+    <hr />
 
 	</body>
 </html>
