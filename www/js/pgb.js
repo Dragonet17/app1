@@ -20,3 +20,13 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
+
+function personaldata() {
+
+	info =  'Karol' + '\n' +
+			'Cichoń' + '\n' +
+			'e-mail: karol.cichon17@gmail.com ';
+
+	navigator.notification.alert(info);
+	
+}
