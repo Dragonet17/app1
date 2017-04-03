@@ -3,18 +3,8 @@ function init() {
 }
 
 function onDeviceReady() {
-	navigator.notification.beep(2);
+	//navigator.notification.beep(2);
 }
-function startAcc() {
-    var options = { frequency: 3000 };  // Update every 3 seconds
-
-    watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
-}
-function stopAcc() {
-    navigator.accelerometer.clearWatch(watchID);
-}
-
-
 function deviceInfo() {
 
 	info =  'Hi, I am your smartphone :-)' + '\n' +
@@ -30,16 +20,24 @@ function deviceInfo() {
 	
 }
 
-function personaldata() {
+function startAcc() {
+    var options = { frequency: 3000 };  // Update every 3 seconds
 
-	info =  'Karol' + '\n' +
-			'Cichoń' + '\n' +
-			'e-mail: karol.cichon17@gmail.com ';
-
-	navigator.notification.alert(info);
-	
+    watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 }
-
+function stopAcc() {
+    navigator.accelerometer.clearWatch(watchID);
+}
+function deviceInfo() {
+    info = 'Hi, I am your smartphone :-)' +
+        '\n' + '=====' + '\n' + 'Device Name    : ' + device.name +
+        '\n' + 'Device Cordova : ' + device.cordova +
+        '\n' + 'Device Platform: ' + device.platform +
+        '\n' + 'Device UUID    : ' + device.uuid +
+        '\n' + 'Device Model   : ' + device.model +
+        '\n' + 'Device Version : ' + device.version +
+        '\n'; navigator.notification.alert(info);
+}
 function checkConnection() {
     var networkState = navigator.connection.type;
 
