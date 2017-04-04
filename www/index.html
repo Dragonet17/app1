@@ -71,6 +71,25 @@
     <button class="btn btn-lg btn-primary" type="button" onclick="showSplash()">Pokaż</button>
 
     <hr />
+ <h3>
+        VI. Pokaż kontakty
+    </h3>
+    <button class="btn btn-lg btn-primary" type="button" onclick="showContacts()">Pokaż</button>
 
+<hr />
+<h3>
+    VII. Wyślij sms
+</h3>
+<div>
+    <input id="numberTxt" placeholder="Podaj numer" value="" type="tel" />
+    <br />
+    <br />
+    <textarea id="messageTxt" placeholder="Treść wiadomości"></textarea>
+    <br />
+    <input type="button" onclick="app.sendSms()" value="Wyślij!" />
+</div>
+    
+
+    <hr />
 	</body>
 </html>
